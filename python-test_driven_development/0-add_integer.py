@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-"""This module provides a function that adds two integers."""
-
-
+"""
+This is the "0-add_integer" module.
+The 0-add_integer module supplies one function, add_integer(a, b).
+For example, it can be used to add two integers like 1 and 2.
+This module is designed for the Test Driven Development project.
+It handles integers and floats, and performs necessary type checks.
+"""
 def add_integer(a, b=98):
     """Return the addition of a and b as integers.
 
