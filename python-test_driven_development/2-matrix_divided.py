@@ -18,15 +18,15 @@ def matrix_divided(matrix, div):
     if not isinstance(matrix, list) or not matrix or not matrix[0]:
         raise TypeError(msg)
     if not isinstance(div, (int, float)):
-        raise TypeError("Div must be a number")
+        raise TypeError("div must be a number")
     if div == 0:
-        raise ZeroDivisionError("Division by zero")
+        raise ZeroDivisionError("division by zero")
     row_len = len(matrix[0])
     for row in matrix:
         if not isinstance(row, list):
             raise TypeError(msg)
         if len(row) != row_len:
-            raise TypeError("Each row of the matrix must have the same size")
+            raise TypeError("each row of the matrix must have the same size")
         for i in row:
             if not isinstance(i, (int, float)):
                 raise TypeError(msg)
