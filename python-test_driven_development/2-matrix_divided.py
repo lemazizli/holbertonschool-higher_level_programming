@@ -25,9 +25,9 @@ def matrix_divided(matrix, div):
     for row in matrix:
         if not isinstance(row, list):
             raise TypeError(msg)
-        if len(row) != row_len:
-            raise TypeError("each row of the matrix must have the same size")
         for i in row:
             if not isinstance(i, (int, float)):
                 raise TypeError(msg)
+        if len(row) != row_len:
+            raise TypeError("each row of the matrix must have the same size")
     return [[round(x / div, 2) for x in row] for row in matrix]
