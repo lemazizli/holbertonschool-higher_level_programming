@@ -49,10 +49,10 @@ class Rectangle:
         return (self.__width + self.__height) * 2
 
     def __str__(self):
-        """ ele bele bir sey"""
+        """a comment for this func"""
         if self.width == 0 or self.height == 0:
             return ""
         TheRec = []
-        for j in range (self.height):
+        for j in range(self.height):
             TheRec.append("#" * self.width)
-        return "/n".join(TheRec)
+        return "\n".join(TheRec)
