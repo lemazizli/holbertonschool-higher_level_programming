@@ -1,22 +1,24 @@
 #!/usr/bin/python3
 """
-functions returns a dictionary description of an object
-for json serialization.
+Function that returns a dictionary description of an object
+for JSON serialization.
 """
 
 
 def class_to_json(obj):
     """
-    Arguments:
-        obj:an instance of class
+    Args:
+        obj: an instance of a class
     Returns:
-        dictionary of serializable attributes (instance + class)
+        dictionary of all serializable attributes (instance + class)
     """
     result = {}
     for key in dir(obj):
+        # Ignore private attributes et méthodes
         if key.startswith('__'):
             continue
         value = getattr(obj, key)
-        if isinstance(value, (int, str, bool, float, list, dict)):
+        # Garde seulement les types simples pour JSON
+        if isinstance(value, (int, float, str, bool, list, dict)):
             result[key] = value
-        return result
+    return result
