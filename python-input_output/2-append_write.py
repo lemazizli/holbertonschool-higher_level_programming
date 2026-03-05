@@ -4,7 +4,7 @@ This module is containing append_write func.
 """
 
 
-def append_write(filename="" ,text=""):
+def append_write(filename="", text=""):
     """
     this is append_write functions.
 
