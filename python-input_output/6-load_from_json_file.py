@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-func create an object from ajason file 
+func create an object from a json file. 
 """
 
 import json
