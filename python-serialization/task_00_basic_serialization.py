@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-serialization modul
-providesw funcs to serialize a python dict to a 
-json file and deserialize it back to a python dict
+Basic serialization module.
+Provides functions to serialize a Python dictionary to a JSON file
+and deserialize it back to a Python dictionary.
 """
 
 import json
@@ -10,11 +10,11 @@ import json
 
 def serialize_and_save_to_file(data, filename):
     """
-    Serialize a python dict and save it to a json file.
+    Serialize a Python dictionary and save it to a JSON file.
 
     Args:
-        data (dict): dict to serialize
-        filename (str): name of output Json file
+        data (dict): The dictionary to serialize.
+        filename (str): The name of the output JSON file.
     """
     with open(filename, "w", encoding="utf-8") as json_file:
         json.dump(data, json_file)
@@ -22,13 +22,13 @@ def serialize_and_save_to_file(data, filename):
 
 def load_and_deserialize(filename):
     """
-    deserialize json data from a file into a python dict
+    Load and deserialize JSON data from a file into a Python dictionary.
 
     Args:
-        filename (str): name of input json file
+        filename (str): The name of the input JSON file.
 
     Returns:
-        dict: deserialized json data
+        dict: The deserialized JSON data.
     """
-    with open(filename, "r", encoding="utuf-8") as json_file:
+    with open(filename, "r", encoding="utf-8") as json_file:
         return json.load(json_file)
