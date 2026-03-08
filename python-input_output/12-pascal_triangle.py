@@ -13,7 +13,7 @@ def pascal_triangle(n):
     triangle = []
 
     for i in range(n):
-        rox = [1]
+        row = [1]
         if triangle:
             last_row = triangle[-1]
             for j in range(1, len(last_row)):
