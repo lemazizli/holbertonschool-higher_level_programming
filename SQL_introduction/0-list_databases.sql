@@ -1,1 +1,2 @@
+--comentdide guya 
 SHOW DATABASES;
