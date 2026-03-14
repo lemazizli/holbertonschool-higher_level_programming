@@ -1,2 +1,2 @@
---comentdide guya 
+-- comentdide guya 
 SHOW DATABASES;
