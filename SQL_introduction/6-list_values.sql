@@ -1,2 +1,2 @@
 -- yene commenttttttttttttt
-SHOW * FROM first_table;
+SHOW* FROM first_table;
