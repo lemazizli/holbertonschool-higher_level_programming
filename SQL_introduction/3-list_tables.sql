@@ -1,0 +1,2 @@
+-- commentdeeeeeeeeeeeeeeeeeeeeeeeee
+SHOW TABLES;
