@@ -1,3 +1,2 @@
--- yene commentttttttttttt
-SHOW* FROM first_table;
-
+-- comment zad
+SELECT * FROM first_table;
