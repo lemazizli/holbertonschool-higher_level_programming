@@ -3,8 +3,8 @@
 import MySQLdb
 import sys
 
+
 if __name__ == "__main__":
-    # Verilənlər bazasına qoşulma
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
@@ -13,10 +13,8 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
     cursor = db.cursor()
-    # Mütləq ORDER BY id ASC olmalıdır
     cursor.execute("SELECT * FROM states ORDER BY id ASC")
-    rows = cursor.fetchall()
-    for row in rows:
+    for row in cursor.fetchall():
         print(row)
     cursor.close()
     db.close()
