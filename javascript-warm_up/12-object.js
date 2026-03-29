@@ -1,11 +1,9 @@
 #!/usr/bin/node
-const myObject = {
-  type: 'object',
-  value: 12
-};
-console.log(myObject);
-/*
-YOUR CODE HERE
-*/
-myObject.value = 89;
-console.log(myObject);
+const args = process.argv.slice(2);
+
+if (args.length <= 1) {
+  console.log(0);
+} else {
+  const list = args.map(Number).sort((a, b) => b - a);
+  console.log(list[1]);
+}
