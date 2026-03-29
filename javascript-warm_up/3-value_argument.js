@@ -1,7 +1,14 @@
 #!/usr/bin/node
 
-if (process.argv[2] === undefined) {
-  console.log('No argument');
+const process = require('process');
+const args = process.argv;
+let count = 0;
+for (count in args) {
+  count++;
+}
+
+if (count >= 3) {
+  console.log(`${args[2]}`);
 } else {
-  console.log(process.argv[2]);
+  console.log('No argument');
 }
